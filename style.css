@@ -1,0 +1,225 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    background: rgb(40, 40, 40);
+    color: rgba(255, 255, 255, 0.804);
+    font-size: 120%;
+}
+
+
+h1, h2, h3 {
+    color: white;
+}
+.header {
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: rgba(99, 0, 104,1);
+    
+}
+
+.hero-container img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    padding: 10px 10px;
+    text-align: center;
+}
+.logo h1 {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.nav-center{
+    z-index: 4;
+    display: flex;
+    margin: auto;
+}
+
+.nav-center .menu {
+    display: flex;
+}
+
+.nav-center li{
+    list-style-type: none;
+    padding: 20px 30px;
+    margin-left: 10px;
+}
+
+.nav-center li:hover{
+    color:aquamarine;
+    box-shadow: white 5px 5px;
+}
+
+
+
+
+/* 
+.home {
+    height: 50%;
+} */
+
+.home-left {    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height: 100%;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+}
+
+.home-left .home-header-container{
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    font-size: 1vw;
+    text-align: center;
+    justify-content: center;
+    padding:0;
+    margin: 0;
+}
+
+.home-left .cta{
+    display: flex;
+    width: 80%;
+    padding: 20px 20px;
+    margin: auto;
+}
+
+.home .cta .image-box {
+    display: flex;
+    width: 125px;
+    height: 125px;
+    padding-right: 30px;
+    margin: auto 0;
+}
+.home-left .cta .description{
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+
+.home-left .sign-up-box{
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(238, 0, 219, 0.105);
+    width: 80%;
+    margin: auto;
+    border-bottom: solid white 1px;
+    height: 720px;
+}    
+.about-section .about-right {
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+.about-section .image-container {
+    width: 50%;
+}
+.about-section .image-container img{
+    height: 70%;
+    padding: 10px 10px;
+    margin:auto;
+}
+
+.product-section{
+    background-color: rgb(55, 55, 55);
+    width: 80%;
+    margin: auto;
+    border-bottom: solid white 1px;
+}
+
+
+.product-section .product-title-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px  ;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+
+.product-section .product-title-section h2{
+    font-size: 4vw;
+    font-weight: 1000;
+    font-style: bold;
+    text-shadow: rgb(0, 239, 0) 0 0 20px;
+    color: rgb(169, 255, 148);
+}
+.product-section .product-title-section .left{
+    padding: 30px 30px;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+}
+.product-section .product-title-section .right {
+    width: 50%;
+}
+.product-section .product-title-section .right img{
+    height: 100%;
+    margin:auto;
+}
+.product-section .tiles{
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    height: 900px;
+    justify-content: space-around;
+}
+
+.product-section .tiles .tile{
+    box-shadow: rgb(255, 136, 0) 5px 5px;
+    border-radius: 5px;
+    flex:1 1 372px;
+    border: solid white 1px;
+    min-width: 560px;
+    background: linear-gradient(49.21deg, rgba(127, 127, 213, 0.2) 19.87%, rgba(134, 168, 231, 0.2) 58.46%, rgba(145, 234, 228, 0.2) 97.05%)    ;
+    height: 400px;
+    margin: 10px;
+}
+
+.product-section .tiles .tile .text-box{
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.607);
+    left: 0%;
+}
+
+
+.contact-section{
+    display: flex;
+    background-color: rgba(0, 132, 255, 0.086);
+    width: 80%;
+    margin: auto;
+    border-bottom: solid white 1px;
+    height: 720px;
+
+}
+
+.contact-section .contact-left{
+    width : 50%;
+    padding: 30px 30px;
+    margin: auto;
+}
+
+.contact-section .contact-submit{
+    padding: 20px 20px;
+    text-align: center;
+    width: 20%;
+    border: solid white 2px;
+}
