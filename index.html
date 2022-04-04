@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birds Arent Real</title>
+    <title>Harold Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
     <!-- IMPORT FONTS FROM GOOGLE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Share+Tech+Mono&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/faa006cbdf.js" crossorigin="anonymous"></script>
+
+</head>
 <body>
     <header class = "header"> 
         <div class = "header-blur"></div>
@@ -47,9 +51,7 @@
             </div>
            
             <div class = "cta">
-                <div class = "image-box">
-                    <img src="logo.svg">
-                </div>
+
                 <div class ="description">
                     <p> <b>Dronies are spy drones</b> that have been created by an unknown manufacturer. Collaborate with your fellow sleuths in working to reveal the mystery behind these Dronies.Dronies are spy drones that have been created by 
                         an unknown manufacturer. Collaborate with your 
@@ -80,6 +82,7 @@
     </div>
     
     <!-- Products Section-->
+    <!-- All Images Taken From Ethereum.org-->
     <div class = "product-section">
         <div class = "product-title-section">
             <div class = "left">
@@ -94,26 +97,38 @@
         </div>
         <div class ="tiles" >
             <div class = "tile">
+                <div class ="image-box">
+                    <img src ="web3.webp">
+                </div>
                 <div class ="text-box">
-                    <h3 class = "tile-title">Web 3.0 Development</h3>
+                    <h3 class = "tile-title"> <i class="fa-brands fa-ethereum"> </i>Web 3.0 Development</h3>
                     <p class ="tile-description">A Wallet let you connect to Ethereum and manage your funds</p>
                 </div>
             </div>
             <div class = "tile">
+                <div class ="image-box">
+                    <img src ="cyber.webp">
+                </div>
                 <div class ="text-box">
-                    <h3 class = "tile-title">Cybersecurity</h3>
+                    <h3 class = "tile-title"><i class="fa-solid fa-user-secret"></i>Cybersecurity</h3>
                     <p class ="tile-description">A Wallet let you connect to Ethereum and manage your funds</p>
                 </div>
             </div>
             <div class = "tile">
+                <div class ="image-box">
+                    <img src ="virtual.webp">
+                </div>
                 <div class ="text-box">
-                    <h3 class = "tile-title">AR/VR Development</h3>
+                    <h3 class = "tile-title"><i class="fa-solid fa-vr-cardboard"></i>AR/VR Development</h3>
                     <p class ="tile-description">A Wallet let you connect to Ethereum and manage your funds</p>
                 </div>
             </div>
             <div class = "tile">
+                <div class ="image-box">
+                    <img src ="doge.webp">
+                </div>
                 <div class ="text-box">
-                    <h3 class = "tile-title">FOSSCAD</h3>
+                    <h3 class = "tile-title"><i class="fa-solid fa-folder-closed"></i>FOSSCAD</h3>
                     <p class ="tile-description">A Wallet let you connect to Ethereum and manage your funds</p>
                 </div>
             </div>
@@ -135,24 +150,23 @@
                 <p>Using your sleuthing skills, join the community on Twitter and Discord to find out why the Dronies are here and who sent them.</p>
             </div>
             <div class = "contact-boxes">
-                <div class = "contact-name">
-                    <input type="text">
+                <div class ="name-and-email">
+                    <input type="text" placeholder="Name" class = "contact-name">
+                    <input type="text" placeholder="Email"  class = "contact-email">
                 </div>
-                <div class= "contact-email">
-                    <input type="text">
-                </div>
-                <div class = "contact-subject">
-                    <input type="text">
-                </div>
-                <div class= "contact-message">
-                    <input type="text">
-                </div>
+                
+                <input type="text" placeholder="Subject" class = "contact-subject">
 
-                <div class = "contact-submit">
-                    <a href = "">Send Message!</a>
-                </div> 
+                <textarea placeholder="Message" class= "contact-message"> </textarea>
             </div>
+
+
+            <div class = "submit-box">
+                <input type="submit" class="contact-submit" value="Message Me!">
+            </div>
+
         </div>
+
 
         <div class = "contact-right">
             
