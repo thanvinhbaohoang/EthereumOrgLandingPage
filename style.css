@@ -42,10 +42,11 @@ nav{
   position: fixed;
   background: #00299960;
   width: 100%;
-  height: 30px;
+  height: 5vw;
   padding: 20px 0;
   z-index: 998;
   transition: all 0.3s ease;
+
 }
 nav.sticky{
   background: #4070f4;
@@ -121,12 +122,6 @@ nav.sticky .menu-btn{
   color: #fff;
 }
 
-
-
-
-
-
-
 /* HERO SECTION */
 .myName {
     width: 100%;
@@ -147,6 +142,117 @@ nav.sticky .menu-btn{
     width: 80%;
     margin: auto;
 }
+
+/* HERO SECTION */
+.myName {
+    width: 100%;
+    height: 100vh;
+    background-color: #232323;
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+
+    background-image: radial-gradient(#ff660038 5%, transparent 10%),radial-gradient(#00b3ff1c 5%, transparent 10%);
+    background-color: #171717;
+    background-position: 0 0, 5px 5px;
+    background-size: 20px 20px;
+  }
+
+/* Floating Icons Section */
+.floating-icons i{
+    transition: 3s;
+    color: rgba(255, 255, 255, 0.496);
+}
+.floating-icons i:hover{
+    transition: 0.1s;
+    color: rgb(255, 178, 95);
+    text-shadow: orange 0 0 200px;
+}
+.floating-icons{
+    align-items: center;
+  }
+  .floating-icons div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: 10s;
+    margin-top: 80px;
+
+  }
+
+  .floating-icons div i{
+    font-size: 3vw;
+  }
+  .floating-icons div:nth-child(1) {
+    top: 25%;
+    left: 25%;
+    animation: float 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+
+  .floating-icons div:nth-child(2) {
+    top: 70%;
+    left: 55%;
+    animation: float 5.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(3) {
+    top: 50%;
+    left: 35%;
+    animation: float 5.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(4) {
+    top: 60%;
+    left: 65%;
+    animation: float 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(5) {
+    top: 12%;
+    left: 44%;
+    animation: float 5.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(6) {
+    top: 32%;
+    left: 84%;
+    animation: float 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(7) {
+    top: 32%;
+    left: 64%;
+    animation: float 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(8) {
+    top: 80%;
+    left: 22%;
+    animation: float 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(9) {
+    top: 10%;
+    left: 15%;
+    animation: float 5.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(10) {
+    top: 60%;
+    left: 20%;
+    animation: float 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+  .floating-icons div:nth-child(11) {
+    top: 60%;
+    left: 80%;
+    animation: float 5.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+  }
+
+  @keyframes float {
+    0%{
+      transform: scale(0) translateY(0) rotate(0) ;
+      opacity: 0;
+    }
+    100%{
+      transform: scale(1) translateY(-180) rotate(360deg);
+      opacity: 1;
+    }
+  }
 
 .logo {
     display: flex;
@@ -229,7 +335,20 @@ nav.sticky .menu-btn{
     width: 20%;
     text-align: center;
     margin: auto;
+    padding: 10px 10px;
 }
+.home-left .sign-up-box:hover{
+  transition:0.2s;
+  color: #ff8432;
+  border: solid 1px #ff8432;
+  box-shadow: #ffa365 5px 5px;
+}
+
+
+
+
+
+/* About Section Start */
 .about-section{
     display: flex;
     justify-content: space-between;
@@ -332,9 +451,12 @@ nav.sticky .menu-btn{
     height: 100%;
 }
 .product-section .tiles .tile .text-box{
-    padding: 10px 30px;
+    padding: 30px;
     background-color: rgba(0, 0, 0, 0.607);
     z-index: 10;
+}
+.product-section .tiles .tile .text-box .tile-title{
+    padding-bottom: 20px;
 }
 .product-section .tiles .tile .text-box i{
     height: 45px;
@@ -358,6 +480,8 @@ nav.sticky .menu-btn{
     margin: auto;
     border-bottom: solid white 1px;
     height: 720px;
+    padding: 20px;
+    margin-top: 20px;
 
 }
 .contact-section .contact-left{
@@ -441,5 +565,13 @@ textarea{
     background: #2b2b2b00;
     text-align: center;
     justify-content: center;
-    border: solid 1px #ff8432;
+    border: solid 1px white;
+}
+
+
+.contact-submit:hover{
+  transition:0.2s;
+  color: #ff8432;
+  border: solid 1px #ff8432;
+  box-shadow: #ffa365 5px 5px;
 }
