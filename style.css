@@ -8,7 +8,7 @@ body {
 
 
 h1, h2, h3 {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .header {
     display: flex;
@@ -217,12 +217,12 @@ h1, h2, h3 {
     z-index: 10;
 }
 .product-section .tiles .tile .text-box i{
-    height: 40px;
-    width: 40px;
-    background: rgba(98, 140, 255, 0.562);
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(49.21deg, rgba(127, 127, 213, 0.2) 19.87%, rgba(134, 168, 231, 0.2) 58.46%, rgba(145, 234, 228, 0.2) 97.05%)    ;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
+    line-height: 45px;
     font-size: 24px;
     color: #fff;
     margin: 0 auto 10px auto;
@@ -233,6 +233,7 @@ h1, h2, h3 {
 .contact-section{
     display: flex;
     background-color: rgba(0, 132, 255, 0.086);
+    justify-content: space-between;
     width: 80%;
     margin: auto;
     border-bottom: solid white 1px;
@@ -276,7 +277,7 @@ input, textarea{
     background: #2b2b2b;
     height: 50px;
     font-size: 16px;
-    color: #8d8d8d;
+    color: #91eeff;
     padding: 20px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
