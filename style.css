@@ -15,10 +15,12 @@ h1, h2, h3 {
     /* position: fixed; */
     justify-content: space-between;
     /* align-items: center; */
-    background-color: rgba(99, 0, 104,1);
-    
+    background-color: rgb(0, 83, 104);
+    height: 80px;
 }
-
+.header img {
+    height: 30px;
+}
 .hero-container img{
     display: block;
     width: 80%;
@@ -56,13 +58,6 @@ h1, h2, h3 {
     box-shadow: white 5px 5px;
 }
 
-
-
-
-/* 
-.home {
-    height: 50%;
-} */
 
 .home-left {    
     margin: auto;
@@ -185,7 +180,7 @@ h1, h2, h3 {
 }
 
 .product-section .tiles .tile{
-    box-shadow: rgb(255, 136, 0) 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -197,6 +192,10 @@ h1, h2, h3 {
     background: linear-gradient(49.21deg, rgba(127, 127, 213, 0.2) 19.87%, rgba(134, 168, 231, 0.2) 58.46%, rgba(145, 234, 228, 0.2) 97.05%)    ;
     height: 400px;
     margin: 10px;
+}
+.product-section .tiles .tile:hover{
+    transition: 0.3s;
+    box-shadow: rgb(255, 136, 0) 10px 10px;
 }
 
 .product-section .tiles .tile .image-box{
@@ -232,7 +231,7 @@ h1, h2, h3 {
 
 .contact-section{
     display: flex;
-    background-color: rgba(0, 132, 255, 0.086);
+    background-color: rgba(4, 16, 33, 0.275);
     justify-content: space-between;
     width: 80%;
     margin: auto;
@@ -255,6 +254,7 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     padding: 30px 30px;
+    padding-bottom: 10px;
 }
 .contact-section .contact-boxes .name-and-email{
     display: flex;
@@ -308,7 +308,7 @@ textarea{
     margin-left:0;
     float: right;
     padding-top: 0;
-
+    margin-top: 0;
 }
 
 .contact-submit{
@@ -317,7 +317,7 @@ textarea{
     color: white;
     font-weight: bold;
     display: flex;
-    background: #2b2b2b;
+    background: #2b2b2b00;
     text-align: center;
     justify-content: center;
     border: solid 1px #ff8432;
