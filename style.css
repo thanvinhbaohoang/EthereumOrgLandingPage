@@ -163,24 +163,27 @@ nav.sticky .menu-btn{
 
 /* Floating Icons Section */
 .floating-icons i{
-    transition: 3s;
+    transition: 10s;
     color: rgba(255, 255, 255, 0.496);
 }
 .floating-icons i:hover{
-    transition: 0.1s;
-    color: rgb(255, 178, 95);
-    text-shadow: orange 0 0 200px;
+    transition: 0s;
+    color: rgb(255, 164, 66);
+    text-shadow: rgb(255, 211, 164) 0 0 80px;
+    font-size: 3.1vw;
 }
+
+
 .floating-icons{
     align-items: center;
   }
-  .floating-icons div {
+
+.floating-icons div {
     position: absolute;
     width: 50px;
     height: 50px;
     transition: 10s;
     margin-top: 80px;
-
   }
 
   .floating-icons div i{
@@ -293,7 +296,7 @@ nav.sticky .menu-btn{
     width:50%;
     height: 100%;
     padding: 30px 30px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .home-left .home-header-container{
@@ -303,14 +306,14 @@ nav.sticky .menu-btn{
     font-size: 1vw;
     text-align: center;
     justify-content: center;
-    padding:0;
+    padding:30px;
     margin: 0;
 }
 
 .home-left .cta{
     display: flex;
     width: 80%;
-    padding: 20px 20px;
+    padding:30px;
     margin: auto;
 }
 
@@ -489,10 +492,12 @@ nav.sticky .menu-btn{
     margin-left: 20px;
 }
 .contact-title{
-    margin: auto;
-    padding:30px;
+  margin: auto;
+  padding:30px;
 }
-
+.contact-title h1 {
+  padding-bottom: 20px;
+}
 
 .contact-section .contact-boxes{
     padding-top: 5rem;
@@ -575,3 +580,4 @@ textarea{
   border: solid 1px #ff8432;
   box-shadow: #ffa365 5px 5px;
 }
+
