@@ -502,7 +502,8 @@ h1 {
     justify-content: space-between;
     background-color: rgba(238, 0, 219, 0.105);
     width: 80%;
-    margin: auto;;
+    margin: auto;
+    padding: 80px;
     border-bottom: solid white 1px;
 }    
 .about-section .about-right {
