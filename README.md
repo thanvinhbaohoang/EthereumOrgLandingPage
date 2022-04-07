@@ -1,8 +1,7 @@
 # Title
-A Portfolio site inspired by Ethereum.org and my own previous portfolio site
-*description*
+A Portfolio site inspired by Ethereum.org, a popular portfolio https://jacekjeznach.com/ my own previous portfolio site.
 
-[deployed url](http://url-if-deployed-here)
+[deployed url](https://harold-than-portfolio.onrender.com/)
 
 ## What Worked Well
 Everything?
@@ -15,6 +14,7 @@ Fancy CSS
 - Scale On Hover Tiles
 - Animated Name/ Job titles
 - Animated Hamburger 
+  
 CSS Checkbox Hack
 Link Headers utilizing the CSS Checkbox hack to expand!
 Easter Eggs: Some Floating Icons are clickable 
