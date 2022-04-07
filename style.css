@@ -502,7 +502,7 @@ h1 {
     justify-content: space-between;
     background-color: rgba(238, 0, 219, 0.105);
     width: 80%;
-    margin: auto;
+    margin: auto;;
     border-bottom: solid white 1px;
     height: 520px;
 }    
@@ -515,17 +515,18 @@ h1 {
 }
 
 .about-section .image-container {
-    display: block;
-    width: 50%;
-}
-.about-section .image-container img{
-  top: 100px;
-    display: flex;
+    width: 350px;
     align-self: center;
-    height: 70%;
-  
-
-}
+    justify-content: center;
+    margin: auto;
+    height: 350px;
+    border: solid 2px white;
+    border-radius: 50%;
+    background-image: url("harold.jpg");
+    background-size:contain;
+    background-position:center;
+    border-radius:50%;
+  }
 
 .product-section{
     background-color: rgb(55, 55, 55);
@@ -558,12 +559,18 @@ h1 {
     margin: auto;
 }
 .product-section .product-title-section .right {
-    width: 50%;
+  width: 550px;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+  height: 550px;
+  border-radius: 50%;
+  background-image: url("hackathon_transparent.webp");
+  background-size:contain;
+  background-position:center;
+  background-repeat: no-repeat;
 }
-.product-section .product-title-section .right img{
-    height: 100%;
-    margin:auto;
-}
+
 .product-section .tiles{
     padding: 40px;
     display: flex;
@@ -705,9 +712,6 @@ h1 {
   background-position:center;
   border-radius:50%;
 }
-.image-container img {
-  width: 200px;
-}
 
 
 input, textarea{
@@ -770,6 +774,11 @@ textarea{
   box-shadow: #ffa365 5px 5px;
 }
 
+footer{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
 
 /* Navbar Transition taken from https://codepen.io/alvarotrigo/pen/XWejzjR*/
 /* Media Query For Mobile Scaling */
