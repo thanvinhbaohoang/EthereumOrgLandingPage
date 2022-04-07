@@ -322,6 +322,7 @@ h1 {
     transition: 0s;
     color: rgb(255, 164, 66);
     text-shadow: rgb(255, 211, 164) 0 0 80px;
+    transform: scale(1.1);
 }
 
 
@@ -580,13 +581,16 @@ h1 {
     border-radius: 5px;
     flex:1 1 372px;
     border: solid white 1px;
+    box-shadow: rgb(255, 136, 0) 5px 5px;
     /* min-width: 40px; */
     background: linear-gradient(49.21deg, rgba(127, 127, 213, 0.2) 19.87%, rgba(134, 168, 231, 0.2) 58.46%, rgba(145, 234, 228, 0.2) 97.05%)    ;
     margin: 10px;
 }
 .product-section .tiles .tile:hover{
     transition: 0.3s;
-    box-shadow: rgb(255, 136, 0) 10px 10px;
+    transform: scale(1.02);
+    box-shadow: rgb(0, 0, 0) 0 0;
+
 }
 
 .product-section .tiles .tile .image-box{
@@ -626,19 +630,19 @@ h1 {
 .contact-section{
     display: flex;
     background-color: rgba(4, 16, 33, 0.275);
-    justify-content: space-between;
+    /* justify-content: space-around; */
     width: 80%;
     margin: auto;
     border-bottom: solid white 1px;
-    height: 720px;
-    padding: 20px;
+    padding: 40px;
     margin-top: 20px;
 
 }
 .contact-section .contact-left{
-    width : 50%;
-    margin-left: 20px;
+    margin-left:0;
+    width: 50%;
 }
+
 .contact-title{
   margin: auto;
   padding:30px;
@@ -648,7 +652,6 @@ h1 {
 }
 
 .contact-section .contact-boxes{
-    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     padding: 30px 30px;
@@ -668,6 +671,44 @@ h1 {
 .contact-email{
     flex-grow: 2;
 }
+
+.contact-right{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+}
+.contact-right .contact-card {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 50px;
+  border: 1px rgba(255, 255, 255, 0.431) solid;
+  border-radius: 15px;
+  background: linear-gradient(49.21deg, rgba(211, 127, 213, 0.2) 19.87%, rgba(231, 136, 134, 0.2) 58.46%, rgba(145, 234, 228, 0.2) 97.05%)    ;
+}
+
+.contact-card h3{
+  padding: 20px;
+  align-self: center;
+}
+
+.contact-card .image-container{
+  width: 200px;
+  align-self: center;
+  height: 200px;
+  border: solid 2px white;
+  border-radius: 50%;
+  background-image: url("harold.jpg");
+  background-size:contain;
+  background-position:center;
+  border-radius:50%;
+}
+.image-container img {
+  width: 200px;
+}
+
 
 input, textarea{
     width: 100%;
@@ -730,9 +771,8 @@ textarea{
 }
 
 
-
-/* ......../ media query /.......... */
 /* Navbar Transition taken from https://codepen.io/alvarotrigo/pen/XWejzjR*/
+/* Media Query For Mobile Scaling */
 @media (max-width: 768px) {
   .navbar {
     opacity: 0.95;
