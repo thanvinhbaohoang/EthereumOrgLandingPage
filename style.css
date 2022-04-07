@@ -504,7 +504,6 @@ h1 {
     width: 80%;
     margin: auto;;
     border-bottom: solid white 1px;
-    height: 520px;
 }    
 .about-section .about-right {
     display: block;
@@ -743,7 +742,7 @@ textarea{
 
 .contact-section .submit-box{
     display: flex;
-    width: 45%;
+    width: 300px;
     padding: 30px;
     text-align: center;
     align-items: center;
@@ -886,3 +885,78 @@ footer{
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
+
+  .home-left .home-header-container{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .home-left .cta{
+    width: 100%;
+    margin: 0%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-section{
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+  .about-section .image-container{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+  }
+
+  .about-section .about-right{
+    width: 100%;
+    padding: 30px;
+    /* justify-content: center; */
+    
+  }
+  .about-section *{
+    text-align: center;
+  }
+
+.product-section{
+  width: 100%;
+}
+  .product-section .product-title-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .product-title-section .right {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .product-section .product-title-section .left{
+
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .product-section .image-container{
+    order: 1;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+  }
+
+  .contact-section{
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-section .contact-left{
+    width: 100%;
+  }
+  .contact-section .submit-box{
+    width: 100%;
+}
