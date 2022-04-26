@@ -1,7 +1,7 @@
 # Title
 A Portfolio site inspired by Ethereum.org, a popular portfolio https://jacekjeznach.com/ my own previous portfolio site.
 
-[deployed url](https://harold-than-portfolio.onrender.com/)
+[Deployed Portfolio Page](https://harold-than-portfolio.onrender.com/)
 
 ## What Worked Well
 Everything?
