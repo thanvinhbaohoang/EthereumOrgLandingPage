@@ -25,7 +25,7 @@
 
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
   background: rgb(24, 24, 24);
   color: rgba(255, 255, 255, 0.804);
@@ -46,34 +46,51 @@ padding-bottom: 10px;
 display: none;
 }
 
-.navbar {
-box-shadow: 0px 5px 10px 0px rgb(35, 0, 40);
+.navbar { 
 position: fixed;
-width: 100%;
-background: rgb(84, 9, 91);
-color: rgb(255, 255, 255);
-opacity: 0.85;
-height: 56px;
-z-index: 12;
-}
-
-.navbar-container {
+bottom: 5%;
+left: 50%;
+transform: translateX(-50%);
 display: flex;
-justify-content: space-around;
-height: 64px;
+justify-content: center;
 align-items: center;
+width: 30%;
+z-index: 999;
 }
 
+.navbar-background {
+  border-radius: 22px; 
+  background-color: rgba(182, 0, 210, 0.5);
+  backdrop-filter: blur(5px);
+  height: 72px;
+  width: 65%;
+  box-shadow: rgba(4, 16, 33, 0.275) 10px 10px;
+}
 .menu-items {
-order: 2;
 display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .menu-items li {
 list-style: none;
 font-size: 20px;
-margin-left: 15px;
-margin-bottom: 10px;
+margin: 20px 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item p{
+  margin-top: 5px;
+  font-size: 12px;
 }
 
 .menu-items a {
