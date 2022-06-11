@@ -25,7 +25,7 @@
 
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   background: rgb(24, 24, 24);
   color: rgba(255, 255, 255, 0.804);
@@ -525,7 +525,7 @@ cursor: pointer;
   height: 350px;
   border: solid 2px white;
   border-radius: 50%;
-  background-image: url("harold.jpg");
+  background-image: url("images/harold.jpg");
   background-size:contain;
   background-position:center;
   border-radius:50%;
@@ -568,7 +568,7 @@ justify-content: center;
 margin: auto;
 height: 550px;
 border-radius: 50%;
-background-image: url("hackathon_transparent.webp");
+background-image: url("images/hackathon_transparent.webp");
 background-size:contain;
 background-position:center;
 background-repeat: no-repeat;
@@ -709,7 +709,7 @@ align-self: center;
 height: 200px;
 border: solid 2px white;
 border-radius: 50%;
-background-image: url("harold.jpg");
+background-image: url("images/harold.jpg");
 background-size:contain;
 background-position:center;
 border-radius:50%;
