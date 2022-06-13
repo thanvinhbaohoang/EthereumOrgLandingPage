@@ -30,6 +30,7 @@ body {
   background: rgb(24, 24, 24);
   color: rgba(255, 255, 255, 0.804);
   font-size: 120%;
+  text-decoration: none;
 }
 
 
@@ -59,8 +60,9 @@ z-index: 999;
 
 .navbar-background {
   border-radius: 22px; 
-  background-color: rgba(182, 0, 210, 0.5);
-  /* backdrop-filter: blur(5px); */
+  background: linear-gradient(90deg,rgba(182, 0, 210, 0.418),rgba(0, 128, 128, 0.479));
+  /* background-color: rgba(182, 0, 210, 0.5); */
+  backdrop-filter: blur(5px);
   height: 72px;
   width: 400px;
   box-shadow: rgba(4, 16, 33, 0.275) 10px 10px;
@@ -87,6 +89,10 @@ align-items: center;
   align-items: center;
 }
 
+.nav-item:hover {
+  text-decoration: none;
+}
+
 .nav-item p{
   margin-top: 5px;
   font-size: 12px;
@@ -101,7 +107,7 @@ transition: color 0.3s ease-in-out;
 }
 
 .menu-items a:hover {
-text-decoration:underline;
+text-decoration:none;
 color: rgb(255, 165, 75);
 transition: color 0.1s ease-in-out;
 }
