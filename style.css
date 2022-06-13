@@ -60,7 +60,7 @@ z-index: 999;
 .navbar-background {
   border-radius: 22px; 
   background-color: rgba(182, 0, 210, 0.5);
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
   height: 72px;
   width: 400px;
   box-shadow: rgba(4, 16, 33, 0.275) 10px 10px;
