@@ -54,7 +54,6 @@ transform: translateX(-50%);
 display: flex;
 justify-content: center;
 align-items: center;
-width: 30%;
 z-index: 999;
 }
 
@@ -63,7 +62,7 @@ z-index: 999;
   background-color: rgba(182, 0, 210, 0.5);
   backdrop-filter: blur(5px);
   height: 72px;
-  width: 65%;
+  width: 400px;
   box-shadow: rgba(4, 16, 33, 0.275) 10px 10px;
 }
 .menu-items {
@@ -91,6 +90,7 @@ align-items: center;
 .nav-item p{
   margin-top: 5px;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .menu-items a {
@@ -113,7 +113,7 @@ margin-bottom: 10px;
 }
 
 /* HERO SECTION */
-.myName {
+.hero-section {
   width: 100%;
   height: 100vh;
   background-color: #232323;
@@ -126,16 +126,15 @@ margin-bottom: 10px;
   background-size: 20px 20px;
 }
 
-.myName .box {
+.hero-section .hero-header {
     width: 250px;
     height: 250px;
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
  }
-.myName .box .title {
+.hero-section .hero-header .title {
     width: 100%;
     position: relative;
     display: flex;
@@ -143,7 +142,7 @@ margin-bottom: 10px;
     height: 50px;
 }
 
-.myName .box .title .block {
+.hero-section .hero-header .title .block {
     width: 0%;
     height: inherit;
     background: #ffa947;
@@ -153,7 +152,7 @@ margin-bottom: 10px;
 }
 
 /* Animations taken from CodePen*/
-.myName .box .title h1 {
+.hero-section .hero-header .title h1 {
         color: #fff;
         font-size: 32px;
         -webkit-animation: mainFadeIn 2s forwards;
@@ -165,14 +164,13 @@ margin-bottom: 10px;
         align-items: baseline;
         position: relative;
 }
-.myName .box .title h1 span {
+.hero-section .hero-header .title h1 span {
           width:0px;
           height: 0px;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
-
-          background: #ffb510;
+          background: #ff10eb;
           -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
           animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
           animation-delay: 2s;
@@ -184,7 +182,7 @@ margin-bottom: 10px;
 
 }
 
-.myName .box .wordCarousel .block {
+.hero-section .hero-header .wordCarousel .block {
   width: 0%;
   height: 20px;
   background: #1e8ee9;
@@ -199,11 +197,13 @@ margin-bottom: 10px;
 @keyframes mainBlock {
   0% {
     width: 0%;
+    background: #b656e9;
     left: 0;
 
   }
   50% {
     width: 100%;
+    background: #2490ef;
     left: 0;
 
   }
@@ -216,6 +216,7 @@ margin-bottom: 10px;
 @keyframes secBlock {
   0% {
     width: 0%;
+    background: #ff7c44;
     left: 0;
 
   }
@@ -244,14 +245,14 @@ margin-bottom: 10px;
   0% {
     width: 0px;
     height: 0px;
-    background: #e9d856;
+    background: #b656e9;
     border: 0px solid #ddd;
     opacity: 0;
   }
   50% {
     width: 10px;
     height: 10px;
-    background: #e9d856;
+    background: #8a057f;
     opacity: 1;
     bottom: 45px;
   }
@@ -269,7 +270,7 @@ margin-bottom: 10px;
   100% {
     width: 7px;
     height: 7px;
-    background: #e9d856;
+    background: #9bebff;
     border: 0px solid #222;
     bottom: 13px;
 
@@ -802,7 +803,7 @@ padding: 30px;
 /* Navbar Transition taken from https://codepen.io/alvarotrigo/pen/XWejzjR*/
 /* Media Query For Mobile Scaling */
 @media (max-width: 1000px) {
-.navbar {
+/* .navbar {
   opacity: 0.95;
 }
 
@@ -903,7 +904,7 @@ padding: 30px;
 }
 .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
   transform: scaleY(0);
-}
+} */
 
 .home-left .home-header-container{
   text-align: center;
@@ -988,4 +989,6 @@ width: 100%;
 .contact-right .contact-card {    
   padding: 40px;
   text-align: center;
+}
+
 }
